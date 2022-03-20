@@ -1,0 +1,7 @@
+#ignore binary files and ipynb checkpoints
+*.out
+*.ipynb_checkpoints
+#ignore text files with results and org files of the homework
+tarea?.org
+results*.txt
+data*.txt
