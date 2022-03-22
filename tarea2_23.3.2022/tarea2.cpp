@@ -35,7 +35,7 @@ int main(void){
               <<std::left << std::setw(25)<< "x_{-}"
               <<std::left << std::setw(25)<< "x_{+}'"
               <<std::left << std::setw(25)<< "x_{-}'" << std::endl;
-    for (int n=0; n<=10; n++){
+    for (int n=1; n<=10; n++){
         c = std::pow(10, -n);
         std::cout << c << "\t"
                   << roots(a,b,c, +1, "naive") << "\t"
