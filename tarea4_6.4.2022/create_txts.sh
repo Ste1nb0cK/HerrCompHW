@@ -1,0 +1,15 @@
+#! /bin/bash
+
+SEED=1;
+NSAMPLES=5000;
+MU=3.5;
+SIGMA=0.4;
+XMIN=2.7;
+XMAX=4.6;
+NBINS=50;
+
+./a.out ${SEED} ${NSAMPLES} ${MU} ${SIGMA} ${XMIN} ${XMAX} ${NBINS}
+SEED=2
+./a.out ${SEED} ${NSAMPLES} ${MU} ${SIGMA} ${XMIN} ${XMAX} ${NBINS}
+SEED=5
+./a.out ${SEED} ${NSAMPLES} ${MU} ${SIGMA} ${XMIN} ${XMAX} ${NBINS}
