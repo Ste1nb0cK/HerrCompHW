@@ -38,3 +38,15 @@ Errores:
 
 Corrección:
 -- Se cambian los valores con los que se inicializan las variables jj e ii en las lineas 13 y 12 respectivamente. Ahora ambas valen 1, de esta forma no ocurre división por cero al llamar foo en la linea 14 ni en la 15.
+
+26:
+Objetivo más probable: crear una copia de a llamada c.
+
+Errores:
+Se declara c como un unsigned int y después se mezclan insts y unsigned ints en la linea 27, por lo que el valor que se está retornando de hecho es un unsigned int y no un int.
+Fuente: https://stackoverflow.com/questions/25609091/what-happens-when-i-mix-signed-and-unsigned-types
+
+Corrección:
+Se declara c como un int en vez de un unsigned int.
+
+En general el código está mal identado, se usa clang-format para arreglarlo.
