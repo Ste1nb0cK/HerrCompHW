@@ -1,0 +1,40 @@
+32:
+Objetivo más probable: Se quiere un if que retorne un valor específico en caso de que x sea igual a ceo.
+
+Errores:
+--El if está mal escrito, se usó "=" en vez del operador de     comparación "==".
+--No se usa {} para especificar la acción a realizar si la condición es verdadera.
+--Se retorna un valor nulo a pesar de que la función debe retornar un double.
+
+Corrección:
+--Se cambia "=" por "==".
+--Se usa {}.
+--Se cambia el valor de retornar de nulo a 0.
+
+33:
+Objetivo más probable: no se puede decir.
+
+Errores:
+Variable inicializada pero nunca usada.
+
+Corrección:
+Se comenta la linea.
+
+
+34:
+Objetivo más probable: retornar la raíz de x.
+
+Errores:
+--Falta el ";" al terminar la linea.
+
+Corrección:
+--Se añade el ";" al final de la linea.
+
+14:
+Objetivo más probable: se intenta llamar la función foo con los argumentos a=0, b=-1
+
+Errores:
+--Se divide por cero ya que se debe calcular b/a
+
+Corrección:
+-- Se cambian los valores con los que se inicializan las variables jj e ii en las lineas 13 y 12 respectivamente. Ahora ambas valen 1, de esta forma no ocurre división por cero al llamar foo en la linea 14 ni en la 15.
